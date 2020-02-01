@@ -1,12 +1,14 @@
 const list = ["aaa","bbb","ccc","ddd","eee","fff","ggg"];
-const imgList = ["01.png","02.png","03.png"];
+//const imgList = ["01.png","02.png","03.png"];
+const objList = ["#crate-obj1","#crate-obj2"];
+const mtlList = ["#crate-mtl1","#crate-mtl2"];
 var count = 0;
 var serifu, img;
 console.log(list.length);
 
 window.onload = function() {
   serifu = document.getElementById("serifu");
-  img = document.getElementById("img");
+  img = document.getElementById("model");
   serifu.addEventListener("click",changeSerifu);
   changeSerifu();
 
@@ -14,10 +16,13 @@ window.onload = function() {
 window.setInterval(animation, 500);
 
 function animation(){
-  var currentImg = 'img/'+ imgList[count%imgList.length];
-  img.setAttribute('src', currentImg);
+  //var currentImg = 'img/'+ imgList[count%imgList.length];
+  //var currentObj = 'obj/'+ modelList[count%modelList.length];
+  img.setAttribute('src', objList[count%objList.length]);
+  img.setAttribute('mtl', mtlList[count%mtlList.length]);
   count ++ ;
 }
+
 
 function changeSerifu(){
   var number = Math.floor( Math.random() * list.length );

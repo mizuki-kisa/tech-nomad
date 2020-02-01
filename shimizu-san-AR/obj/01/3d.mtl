@@ -1,0 +1,17 @@
+newmtl shimizu_N3D_standard_material_stack
+illum 7
+Kd 0.913726 0.913726 0.913726
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm 3d/tmp_eu_thumb_b5b4_c826.png
+adobe_map_translucence 3d/tmp_eu_thumb_f241_a0e7.png
+map_Pr 3d/tmp_eu_thumb_cff3_64fc.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd 3d/tmp_eu_thumb_1b38_acb5.png

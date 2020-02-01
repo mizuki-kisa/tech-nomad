@@ -1,0 +1,17 @@
+newmtl shimizu_N3D_MATERIAL_CERAMIC_TILES_MOKA_material2_stack
+illum 7
+Kd 0.913726 0.913726 0.913726
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm 3d/tmp_eu_thumb_006e_727e.png
+adobe_map_translucence 3d/tmp_eu_thumb_fe36_e788.png
+map_Pr 3d/tmp_eu_thumb_a1aa_0da3.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd 3d/tmp_eu_thumb_8e90_8cc7.png
