@@ -5,16 +5,21 @@
 
 <!-- include aframe-ar.js -->
 <script src="js/aframe-ar.min.js"></script>
-<script src="js/shimizusan.js"></script>
+<!-- <script src="js/shimizusan.js"></script>-->
 <link rel="stylesheet" type="text/css" href="index.min.css">
 </header>
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
 
 	<!-- <a-scene embedded arjs='sourceType: image; sourceUrl:../../data/images/armchair.jpg;'> -->
 	<a-scene embedded arjs='sourceType: webcam;' vr-mode-ui="enabled: false" physics="debug: false;">
+		<a-assets>
+	          <a-asset-item id="crate-obj" src="obj/3d.obj"></a-asset-item>
+	          <a-asset-item id="crate-mtl" src="obj/3d.mtl"></a-asset-item>
+	  </a-assets>
 
 		<a-marker type='pattern' url='pattern-pattern.patt'>
-			<a-image id="img" src="img/shimizusan.png" rotation="-90 0 0" ></a-image>
+			<!-- <a-image id="img" src="img/shimizusan.png" rotation="-90 0 0" depth="2"></a-image> -->
+			<a-obj-model rotation="-90 0 0" scale="0.1 0.1 0.1" src="obj/3d.obj" mtl="obj/3d.mtl"></a-obj-model>
 		</a-marker>
 
 		<a-entity camera></a-entity>
