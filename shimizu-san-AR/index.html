@@ -1,25 +1,25 @@
 <!DOCTYPE html>
+<header>
+	<meta charset="utf-8"/>
 <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
 
 <!-- include aframe-ar.js -->
 <script src="js/aframe-ar.min.js"></script>
+<script src="js/shimizusan.js"></script>
+<link rel="stylesheet" type="text/css" href="index.min.css">
+</header>
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
 
-<body style='margin : 0px; overflow: hidden; font-family: Monospace;'><div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
-	<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - example for a-frame
-	<br/>
-	Contact me any time at <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
-</div>
 	<!-- <a-scene embedded arjs='sourceType: image; sourceUrl:../../data/images/armchair.jpg;'> -->
-	<a-scene embedded arjs='sourceType: webcam;'>
+	<a-scene embedded arjs='sourceType: webcam;' vr-mode-ui="enabled: false" physics="debug: false;">
 
 		<a-marker type='pattern' url='pattern-pattern.patt'>
-		<a-sphere scale=".25 .25 .25" position="0 .5 0" color="#f00">
-			<a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
-			</a-animation>
-		</a-sphere>
+			<a-image id="img" src="img/shimizusan.png" rotation="-90 0 0" ></a-image>
 		</a-marker>
 
 		<a-entity camera></a-entity>
 	</a-scene>
+
+	<div id="serifu"><div>テキストダミー</div></div>
 </body>
 </html>
